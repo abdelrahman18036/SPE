@@ -529,10 +529,10 @@
             current = (currentPage[currentPage.length - 1]);
         $(".menu li a").each(function() {
             let $this = $(this);
-            if ($this.attr("href") === current) {
+        /*    if ($this.attr("href") === current) {
                 $this.parents('.menu-item').addClass("active");
                 $this.parents(".menu-item-has-children").addClass("active");
-            }
+            }*/
         });
     }
     menuActiveClass();
