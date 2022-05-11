@@ -1,10 +1,6 @@
 (function($) {
     "use strict";
-
-    /*-------------------------------------
-    Contact Form initiating
-    -------------------------------------*/
-    var contactForm = $('#contact-form');
+    var contactForm = $('#contact1form');
     if (contactForm.length) {
         contactForm.validator().on('submit', function(e) {
             var $this = $(this),
@@ -12,27 +8,12 @@
             if (e.isDefaultPrevented()) {
                 $target.html("<div class='alert alert-success'><p>Please select all required field.</p></div>");
             } else {
-                $.ajax({
-                    url: "php/mailer.php",
-                    type: "POST",
-                    data: contactForm.serialize(),
-                    beforeSend: function() {
-                        $target.html("<div class='alert alert-info'><p>Loading ...</p></div>");
-                    },
-                    success: function(text) {
-                        if (text === "success") {
-                            $this[0].reset();
-                            $target.html("<div class='alert alert-success'><p>Message has been sent successfully.</p></div>");
-                        } else {
-                            $target.html("<div class='alert alert-success'><p>" + text + "</p></div>");
-                        }
-                    }
-                });
-                return false;
+               
+
             }
         });
     }
-
+   
     /*-------------------------------------
     After Load All Content Add a Class In Body
     -------------------------------------*/
