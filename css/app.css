@@ -5740,6 +5740,7 @@ section:hover .section-heading.style-three:after {
 .footer1.footer-bottom {
   background-color: #2A07F9;
   min-height: 60px;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5859,6 +5860,8 @@ section:hover .section-heading.style-three:after {
 .footer2.footer-bottom .copyright-text .link-text {
   color: #ffffff;
   display: inline-block;
+  text-align: center;
+
   margin: 0 5px;
   transition: all 0.3s ease-in-out;
 }
