@@ -9,6 +9,7 @@ const config = {
   measurementId: "G-4M5YSFSN1K"
 };
 firebase.initializeApp(config);
+
 function getInputVal(id) {
   return document
       .getElementById(id)

@@ -70,10 +70,20 @@ if (contactForm.length) {
                 }
 
                 function saveMessage(name, subject, email, phone, message) {
+                    var currentdate = new Date();
+                    var datetime = currentdate.getDate() + "/" + (
+                        currentdate.getMonth() + 1
+                    ) + "/" + currentdate.getFullYear() + " at " + currentdate.getHours() + ":" +
+                            currentdate.getMinutes() + ":" + currentdate.getSeconds();
                     var newMessageRef = messagesRef.push();
-                    newMessageRef.set(
-                        {name: name, subject: subject, email: email, phone: phone, message: message}
-                    );
+                    newMessageRef.set({
+                        name: name,
+                        subject: subject,
+                        email: email,
+                        phone: phone,
+                        message: message,
+                        sendAt:datetime
+                    });
 
                     document
                         .getElementById('contactForm')
