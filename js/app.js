@@ -411,6 +411,14 @@
         }
 
 
+        if ($('.rt-mfp-gallery-item8')) {
+            $('.rt-mfp-gallery-item8').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        }
 
 
 
