@@ -8,12 +8,12 @@
             if (e.isDefaultPrevented()) {
                 $target.html("<div class='alert alert-danger'><p>Please select all required field.</p></div>");
             } else {
-               
+
 
             }
         });
     }
-   
+
     /*-------------------------------------
     After Load All Content Add a Class In Body
     -------------------------------------*/
@@ -340,6 +340,14 @@
                 }
             });
         }
+        if ($('.rt-mfp-gallery-item1')) {
+            $('.rt-mfp-gallery-item1').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        }
 
 
         let videoPopUp = $(".play-btn");
@@ -510,10 +518,10 @@
             current = (currentPage[currentPage.length - 1]);
         $(".menu li a").each(function() {
             let $this = $(this);
-        /*    if ($this.attr("href") === current) {
-                $this.parents('.menu-item').addClass("active");
-                $this.parents(".menu-item-has-children").addClass("active");
-            }*/
+            /*    if ($this.attr("href") === current) {
+                    $this.parents('.menu-item').addClass("active");
+                    $this.parents(".menu-item-has-children").addClass("active");
+                }*/
         });
     }
     menuActiveClass();
