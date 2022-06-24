@@ -348,6 +348,84 @@
                 }
             });
         }
+        if ($('.rt-mfp-gallery-item2')) {
+            $('.rt-mfp-gallery-item2').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        }
+
+
+        if ($('.rt-mfp-gallery-item3')) {
+            $('.rt-mfp-gallery-item3').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        }
+
+
+
+        if ($('.rt-mfp-gallery-item4')) {
+            $('.rt-mfp-gallery-item4').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        }
+
+        if ($('.rt-mfp-gallery-item5')) {
+            $('.rt-mfp-gallery-item5').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        }
+
+
+
+        if ($('.rt-mfp-gallery-item6')) {
+            $('.rt-mfp-gallery-item6').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        }
+
+
+
+
+        if ($('.rt-mfp-gallery-item7')) {
+            $('.rt-mfp-gallery-item7').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         let videoPopUp = $(".play-btn");
