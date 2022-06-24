@@ -422,6 +422,14 @@
 
 
 
+        if ($('.rt-mfp-gallery-item9')) {
+            $('.rt-mfp-gallery-item9').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        }
 
 
 
